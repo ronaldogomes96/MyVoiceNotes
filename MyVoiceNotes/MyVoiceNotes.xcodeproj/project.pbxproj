@@ -20,6 +20,8 @@
 		7790B1EB253F29B300326499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7790B1E9253F29B300326499 /* LaunchScreen.storyboard */; };
 		7790B1F6253F29B300326499 /* MyVoiceNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7790B1F5253F29B300326499 /* MyVoiceNotesTests.swift */; };
 		7790B201253F29B300326499 /* MyVoiceNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7790B200253F29B300326499 /* MyVoiceNotesUITests.swift */; };
+		77D2950B253FC360002E13FD /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D29509253FC360002E13FD /* Note+CoreDataClass.swift */; };
+		77D2950C253FC360002E13FD /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D2950A253FC360002E13FD /* Note+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		7790B1FC253F29B300326499 /* MyVoiceNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVoiceNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7790B200253F29B300326499 /* MyVoiceNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVoiceNotesUITests.swift; sourceTree = "<group>"; };
 		7790B202253F29B300326499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D29509253FC360002E13FD /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "MyVoiceNotes/Note+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		77D2950A253FC360002E13FD /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "MyVoiceNotes/Note+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 		7790B216253F2A1800326499 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77D29509253FC360002E13FD /* Note+CoreDataClass.swift */,
+				77D2950A253FC360002E13FD /* Note+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,8 +309,10 @@
 				7790B1DC253F29B200326499 /* AppDelegate.swift in Sources */,
 				7790B1E6253F29B200326499 /* MyVoiceNotes.xcdatamodeld in Sources */,
 				7790B1DE253F29B200326499 /* SceneDelegate.swift in Sources */,
+				77D2950B253FC360002E13FD /* Note+CoreDataClass.swift in Sources */,
 				773A37D3253F92F200840CBD /* RecordNoteViewController.swift in Sources */,
 				773A37DD253FB14B00840CBD /* NotesDescriptionViewController.swift in Sources */,
+				77D2950C253FC360002E13FD /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
