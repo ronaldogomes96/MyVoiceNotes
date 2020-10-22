@@ -108,6 +108,7 @@ class SubmitViewController: UIViewController {
             
         }
          */
+        Note.saveNotes(descriptionNote: descriptionNote)
         //De ambas as formas mostra novamente o botao de Done
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.doneTapped))
         

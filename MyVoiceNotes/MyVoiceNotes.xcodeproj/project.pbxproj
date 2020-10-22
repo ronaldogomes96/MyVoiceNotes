@@ -13,6 +13,8 @@
 		773A37D8253F977500840CBD /* NoteDescription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773A37D7253F977500840CBD /* NoteDescription.storyboard */; };
 		773A37DD253FB14B00840CBD /* NotesDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A37DC253FB14B00840CBD /* NotesDescriptionViewController.swift */; };
 		773A37F1253FB3BD00840CBD /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A37F0253FB3BD00840CBD /* SubmitViewController.swift */; };
+		774A4EB62541B10B0043E839 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774A4EB52541B10B0043E839 /* CloudKit.framework */; };
+		774A4EC12541B4440043E839 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A4EC02541B4440043E839 /* Note.swift */; };
 		7790B1DC253F29B200326499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7790B1DB253F29B200326499 /* AppDelegate.swift */; };
 		7790B1DE253F29B200326499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7790B1DD253F29B200326499 /* SceneDelegate.swift */; };
 		7790B1E6253F29B200326499 /* MyVoiceNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7790B1E4253F29B200326499 /* MyVoiceNotes.xcdatamodeld */; };
@@ -20,8 +22,6 @@
 		7790B1EB253F29B300326499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7790B1E9253F29B300326499 /* LaunchScreen.storyboard */; };
 		7790B1F6253F29B300326499 /* MyVoiceNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7790B1F5253F29B300326499 /* MyVoiceNotesTests.swift */; };
 		7790B201253F29B300326499 /* MyVoiceNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7790B200253F29B300326499 /* MyVoiceNotesUITests.swift */; };
-		77D2950B253FC360002E13FD /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D29509253FC360002E13FD /* Note+CoreDataClass.swift */; };
-		77D2950C253FC360002E13FD /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D2950A253FC360002E13FD /* Note+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,9 @@
 		773A37D7253F977500840CBD /* NoteDescription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoteDescription.storyboard; sourceTree = "<group>"; };
 		773A37DC253FB14B00840CBD /* NotesDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDescriptionViewController.swift; sourceTree = "<group>"; };
 		773A37F0253FB3BD00840CBD /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		774A4EB02541B0FF0043E839 /* MyVoiceNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyVoiceNotes.entitlements; sourceTree = "<group>"; };
+		774A4EB52541B10B0043E839 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		774A4EC02541B4440043E839 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		7790B1D8253F29B200326499 /* MyVoiceNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVoiceNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7790B1DB253F29B200326499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7790B1DD253F29B200326499 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +64,6 @@
 		7790B1FC253F29B300326499 /* MyVoiceNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVoiceNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7790B200253F29B300326499 /* MyVoiceNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVoiceNotesUITests.swift; sourceTree = "<group>"; };
 		7790B202253F29B300326499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77D29509253FC360002E13FD /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "MyVoiceNotes/Note+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		77D2950A253FC360002E13FD /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "MyVoiceNotes/Note+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774A4EB62541B10B0043E839 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		774A4EB42541B10B0043E839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				774A4EB52541B10B0043E839 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7790B1CF253F29B200326499 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 				7790B1F4253F29B300326499 /* MyVoiceNotesTests */,
 				7790B1FF253F29B300326499 /* MyVoiceNotesUITests */,
 				7790B1D9253F29B200326499 /* Products */,
+				774A4EB42541B10B0043E839 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +124,7 @@
 		7790B1DA253F29B200326499 /* MyVoiceNotes */ = {
 			isa = PBXGroup;
 			children = (
+				774A4EB02541B0FF0043E839 /* MyVoiceNotes.entitlements */,
 				7790B214253F2A0800326499 /* View */,
 				7790B215253F2A1100326499 /* Controller */,
 				7790B216253F2A1800326499 /* Model */,
@@ -167,8 +179,7 @@
 		7790B216253F2A1800326499 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				77D29509253FC360002E13FD /* Note+CoreDataClass.swift */,
-				77D2950A253FC360002E13FD /* Note+CoreDataProperties.swift */,
+				774A4EC02541B4440043E839 /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,12 +318,11 @@
 				773A37F1253FB3BD00840CBD /* SubmitViewController.swift in Sources */,
 				773A37C7253F8C5500840CBD /* NotesViewController.swift in Sources */,
 				7790B1DC253F29B200326499 /* AppDelegate.swift in Sources */,
+				774A4EC12541B4440043E839 /* Note.swift in Sources */,
 				7790B1E6253F29B200326499 /* MyVoiceNotes.xcdatamodeld in Sources */,
 				7790B1DE253F29B200326499 /* SceneDelegate.swift in Sources */,
-				77D2950B253FC360002E13FD /* Note+CoreDataClass.swift in Sources */,
 				773A37D3253F92F200840CBD /* RecordNoteViewController.swift in Sources */,
 				773A37DD253FB14B00840CBD /* NotesDescriptionViewController.swift in Sources */,
-				77D2950C253FC360002E13FD /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyVoiceNotes/MyVoiceNotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = MyVoiceNotes/Info.plist;
@@ -499,6 +510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyVoiceNotes/MyVoiceNotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y77S7YQP;
 				INFOPLIST_FILE = MyVoiceNotes/Info.plist;
